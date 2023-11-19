@@ -16,11 +16,10 @@
                 <nav>
                     <img src="images/portfoliologo.png" class="logo">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-text">
@@ -42,13 +41,107 @@
                             an aspiring engineer with a passion for technology and innovation.
                             I have always had a deep love for tech related stuff and i wanna explore 
                             the tech space.  </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link">Experience</p>
-                            <p class="tab-links">Education</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                                
+                                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                                <p class="tab-links" onclick="opentab('Languages')">Languages</p>
+                                </div>
+                                <div class="tab-contents active-tab" id="Skills">
+                                    <ul>
+                                        <li><span>Web Development</span><br> </li>
+                                        <li><span>Machine Learning</span><br> </li>
+                                        
+                                        <li><span>Problem Solving enthusiast</span></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tab-contents" id="Education">
+                                    <ul>
+                                        <li><span>2022 - Present</span><br> Model Engineering College, Kochi<br>(BTech, Computer Science)</li>
+                                        <li><span>2018 - 2022</span><br> St. Antony's Public School</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tab-contents" id="Languages">
+                                    <ul>
+                                        <li><span>Python</span><br> </li>
+                                        <li><span>C</span><br> </li>
+                                        <li><span>HTML</span></li>
+                                        <li><span>JavaScript</span></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
+        <!-----------------------------projects----------------------------------->
+                <div id="projects">
+                    <div class="container">
+                        <h3 class="sub-title1">My Projects</h3>
+                        <div class="projects-list">
+                            <div>
+                                <i class="fa-solid fa-code"></i>
+                                <h4>E-Cycle</h4>
+                                <p>The E-cycle initiative is a groundbreaking solution designed to simplify
+                                     e-waste collection and recycling efforts. The website serves as a dedicated platform
+                                      designed to assist both individuals and businesses in discovering responsible methods
+                                       to dispose of their old electronic devices, all while safeguarding the environment. </p>
+                            
+                                <a href="https://github.com/nikmat04/E-Cycle.git">Github Link</a>
+                            
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-code"></i>
+                                <h4>Excel CTF Frontend</h4>
+                                <p> </p>
+                            
+                                <a href="https://github.com/nikmat04/Excel-CTF-Frontend.git">Github Link</a>
+                            
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-pen-nib"></i>
+                                <h4>Coming Soon....</h4>
+                                <p>Stay Tuned</p>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        
+        <!-----------------------------contact------------------------------------>
+                <div id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h5 class="sub-title2">Contact Me</h5>
+                                <p><i class="fa-solid fa-envelope"></i>nikhilmathewmdm@gmail.com</p>
+                                <p><i class="fa-solid fa-square-phone"></i>+91 9846904163</p>
+                                <div class="social-icons">
+                                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                
+                            </div>
+                            <div class="contact-right">
+                                <form name="submit-to-google-sheet">
+                                    <input type="text" name="Name" placeholder="Your Name" required>
+                                    <input type="email" name="Email" placeholder="Your Email" required>
+                                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                                    <button type="submit" class="btn btn2">Submit</button> 
+                                </form>
+                                <span id="msg"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <script src="main.js"></script>
     </body>
+</html>
+                        
+
+        
